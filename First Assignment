@@ -1,0 +1,72 @@
+<html>
+  <head>
+        <title>Assignment 1</title>
+        <script language="javascript">
+                function add()
+                {
+				        if(document.getElementById("number1").value=="" || document.getElementById("number2").value=="")
+						{
+						alert("Input Is empty");
+						}
+						else
+						{
+						var a = parseInt(document.getElementById("number1").value);
+                        var b = parseInt(document.getElementById("number2").value);
+                        var add = document.getElementById("value");
+                        add.value = a+b;
+						}
+                }
+				function sub()
+                {
+				        if(document.getElementById("number1").value=="" || document.getElementById("number2").value=="")
+						{
+						alert("Input Is empty");
+						}
+						else
+						{
+                        var a = parseInt(document.getElementById("number1").value);
+                        var b = parseInt(document.getElementById("number2").value);
+                        var sub = document.getElementById("value");
+                        sub.value = a-b;
+						}
+                }
+				function mul()
+                {
+				        if(document.getElementById("number1").value=="" || document.getElementById("number2").value=="")
+						{
+						alert("Input Is empty");
+						}
+						else
+						{
+                        var a = parseInt(document.getElementById("number1").value);
+                        var b = parseInt(document.getElementById("number2").value);
+                        var mul = document.getElementById("value");
+                        mul.value = a*b;
+						}
+                }
+			    function div()
+                {
+				        if(document.getElementById("number1").value=="" || document.getElementById("number2").value=="")
+						{
+						alert("Input Is empty");
+						}
+						else
+						{
+                        var a = parseInt(document.getElementById("number1").value);
+                        var b = parseInt(document.getElementById("number2").value);
+                        var div = document.getElementById("value");
+                        div.value = a/b;
+						}
+                }
+        </script>
+  </head>
+  <body>
+        Number1 = <input type="text" id="number1" name="number1"/><br>
+        Number2 = <input type="text" id="number2" name="number2"/><br>
+        <input type="button" name="Sumbit" value="Addition" onclick="javascript:add()"/>
+		<input type="button" name="Sumbit" value="Subtract" onclick="javascript:sub()"/>
+		<input type="button" name="Sumbit" value="Multiply" onclick="javascript:mul()"/>
+		<input type="button" name="Sumbit" value="Divide" onclick="javascript:div()"/><br>
+        Value = <input type="text" id="value" name="value" value=""/><br>
+  </body>
+</html>
